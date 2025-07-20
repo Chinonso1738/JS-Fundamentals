@@ -1,5 +1,8 @@
-const languages = ['C is fun', 'C is fun', 'C is fun', 'C is fun', 'C is fun', 'C is fun', 'Python is cool', 'JavaScript is amazing'];
+const x = parseInt(process.argv[2]);
 
-for (let i = 0; i < languages.length; i++) {
-    console.log(languages[i]);
+if (isNaN(x) || x < 0) {
+  console.log('Missing number of occurrences');
+} else {
+  for (let i = 0; i < x; i++) {
+    console.log('C is fun');
 }
